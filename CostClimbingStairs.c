@@ -18,7 +18,7 @@ Input: cost = [1,100,1,1,1,100,1,1,100,1]
 Output: 6
 Explanation: Cheapest is: start on cost[0], and only step on 1s, skipping cost[3].
 
-Note: Compare the previous two steps (1 or 2) and add the cost of the current step.
+Note: Compare the min of the previous two steps (1 or 2) and add the cost of the current step.
 */
 #define min(X,Y) (X<Y?X:Y)
 int minCostClimbingStairs(int* cost, int costSize){
